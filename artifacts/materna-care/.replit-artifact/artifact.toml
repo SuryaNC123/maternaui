@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "MaternaCare"
+version = "1.0.0"
+id = "artifacts/materna-care"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22088
+
+[services.development]
+run = "pnpm --filter @workspace/materna-care run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/materna-care", "run", "build" ]
+publicDir = "artifacts/materna-care/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22088"
+BASE_PATH = "/"

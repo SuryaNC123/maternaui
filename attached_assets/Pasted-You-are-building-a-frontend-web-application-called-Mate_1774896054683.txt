@@ -1,0 +1,162 @@
+You are building a frontend web application called "MaternaCare", a pregnancy guidance platform.
+
+CRITICAL INSTRUCTIONS (MUST FOLLOW STRICTLY):
+
+* Use ONLY HTML, CSS, and Vanilla JavaScript
+* DO NOT use React
+* DO NOT use Next.js, Vue, Angular, or any framework
+* DO NOT use Tailwind CSS or Bootstrap
+* DO NOT use any external libraries
+* DO NOT use TypeScript
+* DO NOT use any build tools
+
+REPEAT: ONLY HTML + CSS + VANILLA JAVASCRIPT. NOTHING ELSE.
+
+---
+
+IMPLEMENT THE FOLLOWING USER FLOW EXACTLY:
+
+1. HOME PAGE
+
+* Display logo/title: "MaternaCare"
+* Subtitle: "Your trusted companion for every stage of pregnancy and beyond"
+* Show 3 feature cards:
+
+  * Stage-Specific Guidance
+  * Quick Answers
+  * Trusted Information Sources
+* Add a "Get Started" button
+
+---
+
+2. GENERAL GUIDANCE SECTION (AFTER CLICKING GET STARTED)
+
+* Show a section titled:
+  "Essential Pregnancy Care Principles"
+* Display 6 category cards:
+
+  * Emotional Well-being
+  * Rest & Recovery
+  * Nutrition
+  * Physical Activity
+  * Medical Care
+  * Safety
+* Each card contains short bullet guidance (static content)
+
+---
+
+3. STAGE SELECTION
+
+* Title: "Select Your Stage"
+
+* Show 4 options:
+
+  * First Trimester (1–3 months)
+  * Second Trimester (4–6 months)
+  * Third Trimester (7–9 months)
+  * Postpartum (After Birth)
+
+* User must select ONE stage
+
+---
+
+4. STAGE-SPECIFIC GUIDANCE DISPLAY
+
+* After selecting stage:
+
+  * Show selected stage heading
+
+* Show 6 category buttons:
+  Emotional, Rest, Nutrition, Physical, Medical, Safety
+
+* When a category is clicked:
+
+  * Display TWO PANELS:
+    LEFT: "Top 5 Do’s" (green theme)
+    RIGHT: "Top 5 Don’ts" (red theme)
+
+* Use JavaScript arrays (mock data) to populate:
+
+  * Do’s list
+  * Don’ts list
+
+---
+
+5. SEARCH SECTION
+
+* Below Do’s and Don’ts:
+
+* Add a search bar:
+  Placeholder: "Try 'Can I drink coffee?' or 'What exercises are safe?'"
+
+* Add a search button
+
+* Show suggested questions as clickable chips:
+  Example:
+
+  * Can I drink coffee?
+  * What exercises are safe?
+  * Can I eat fish?
+
+---
+
+6. SEARCH FUNCTIONALITY (VANILLA JS ONLY)
+
+* When user types a query:
+
+  * Simulate keyword matching using JavaScript
+  * Use simple keyword detection (e.g., "coffee", "exercise", "fish")
+
+* Based on keyword:
+
+  * Display a relevant response (mock data)
+
+* If no match found:
+
+  * Show message:
+    "No results found. Try another question."
+
+---
+
+7. MEDICAL DISCLAIMER (IMPORTANT)
+
+* At the bottom:
+  Show warning message:
+  "This information is for educational purposes only. Always consult your healthcare provider for medical advice. In case of severe symptoms, seek immediate medical attention."
+
+---
+
+DESIGN REQUIREMENTS:
+
+* Soft pastel pink background
+* Clean modern UI
+* Rounded cards with subtle shadows
+* Gradient button (pink → purple)
+* Responsive layout (mobile + desktop)
+* Use ONLY CSS (Flexbox/Grid allowed)
+
+---
+
+FILE STRUCTURE (STRICT):
+
+* index.html
+* style.css
+* script.js
+
+---
+
+OUTPUT REQUIREMENTS:
+
+* Provide COMPLETE working code
+* Separate HTML, CSS, JS
+* No explanations
+* No frameworks
+
+---
+
+FINAL WARNING:
+
+If you use React, Tailwind, Bootstrap, or ANY framework,
+THE OUTPUT IS INVALID.
+
+ONLY HTML + CSS + VANILLA JAVASCRIPT.
