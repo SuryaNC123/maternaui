@@ -1,0 +1,178 @@
+You have already built the MaternaCare frontend.
+
+Now REFINE the existing UI based on the following STRICT and COMPLETE requirements.
+
+CRITICAL RULES:
+
+* Use ONLY HTML, CSS, and Vanilla JavaScript
+* DO NOT use React, Tailwind, Bootstrap, or any framework
+* DO NOT restructure the project
+* ONLY modify existing code carefully
+* Preserve all working functionality
+
+---
+
+1. ICON SYSTEM (STRICT + SCOPED)
+
+* Remove all inconsistent icons/emojis
+* Use ONE consistent SVG icon style (e.g., Lucide or inline SVG)
+
+APPLY ONLY TO:
+
+* Category cards (6 main categories)
+* Category selection buttons
+
+DO NOT MODIFY:
+
+* Trimester/stage icons (First, Second, Third, Postpartum)
+
+Ensure:
+
+* Same icon size (~22–24px)
+* Same stroke width
+* Proper alignment and spacing
+
+---
+
+2. REMOVE AUTO-SCROLL (CRITICAL)
+
+When a category is clicked:
+
+* DO NOT scroll the page
+
+Remove ALL of the following if present:
+
+* scrollIntoView()
+* window.scrollTo()
+* window.scroll()
+* location.hash
+* anchor links (#section)
+
+Ensure:
+
+* Clicking a category ONLY updates content
+* Scroll position remains unchanged
+
+---
+
+3. SEARCH TEXT UPDATE
+
+Replace:
+"Search our database for quick answers..."
+
+With:
+"Get quick, trusted answers to your pregnancy questions"
+
+---
+
+4. SEARCH SECTION (FULL REDESIGN + REFINEMENT)
+
+Match Figma design EXACTLY:
+
+Container:
+
+* Light blue background (#f0f4ff or similar)
+* Border-radius: 16px–20px
+* Very subtle border
+* Soft shadow
+
+Example:
+
+* border: 1px solid rgba(99,102,241,0.15)
+* box-shadow: 0 8px 20px rgba(0,0,0,0.04)
+
+Spacing:
+
+* Padding: ~24px
+* Proper vertical spacing
+
+Heading:
+
+* Icon + text aligned horizontally
+
+Input:
+
+* White background
+* Rounded (12px)
+* Soft border
+* Clean padding
+
+Button:
+
+* Blue/purple tone
+* Rounded
+* Proper spacing from input
+
+Suggested chips:
+
+* Light background (white)
+* Rounded pills (20px)
+* Soft border
+* Even spacing
+
+---
+
+5. DO’s & DON’Ts ALIGNMENT
+
+* Both panels must:
+
+  * Have equal height
+  * Align perfectly side-by-side
+
+Use:
+
+* display: flex or grid
+* align-items: stretch
+
+---
+
+6. DISCLAIMER TEXT FIX
+
+* Center align text
+* Limit width (max-width ~500–600px)
+* Improve line-height (1.6–1.8)
+* Ensure balanced wrapping
+
+---
+
+7. LOGO UPDATE
+
+* Replace current logo icon with a minimal SVG representing a pregnant woman
+* Keep it:
+
+  * Clean
+  * Pink themed
+  * Similar to design
+
+---
+
+8. CARD BORDER SOFTENING
+
+* Remove heavy borders from cards
+* Use:
+
+  * No border OR extremely subtle border
+  * Soft shadow instead
+
+---
+
+9. PRESERVE TRIMESTER ICONS
+
+* DO NOT change icons in:
+
+  * First Trimester
+  * Second Trimester
+  * Third Trimester
+  * Postpartum
+
+---
+
+FINAL CHECK (MANDATORY):
+
+* UI must closely match provided screenshots
+* No layout break
+* No new frameworks introduced
+* No scroll movement on interaction
+* All changes consistent across pages
+
+If any rule is violated, the solution is INVALID.
