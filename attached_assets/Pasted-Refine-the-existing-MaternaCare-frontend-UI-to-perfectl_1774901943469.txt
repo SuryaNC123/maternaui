@@ -1,0 +1,125 @@
+Refine the existing MaternaCare frontend UI to perfectly match the provided Figma design.
+
+STRICT GLOBAL RULES:
+
+* Use ONLY HTML, CSS, and Vanilla JavaScript
+* DO NOT use React, Tailwind, Bootstrap, or any framework
+* DO NOT restructure the project
+* DO NOT break existing functionality
+* ONLY refine UI and icons carefully
+
+---
+
+1. CATEGORY ICON SYSTEM (SVG ONLY)
+
+For the 6 categories:
+
+* Emotional Well-being → heart
+* Rest & Recovery → moon
+* Nutrition → apple (IMPORTANT)
+* Physical Activity → activity/heartbeat
+* Medical Care → stethoscope
+* Safety → shield
+
+REQUIREMENTS:
+
+* Use clean SVG icons (NO emojis)
+* Same style (stroke-based)
+* Same size (~22–24px)
+* Same stroke width
+* Proper alignment
+
+Apply in:
+
+* Category cards
+* Category selection buttons
+
+---
+
+2. NUTRITION ICON (MANDATORY)
+
+* Replace all Nutrition icons with an APPLE SVG
+* Must appear everywhere consistently
+
+---
+
+3. TRIMESTER ICONS (FOLLOW FIGMA — USE EMOJIS)
+
+DO NOT use SVG here.
+
+Use EXACT emojis:
+
+* First Trimester → 🌱
+* Second Trimester → 🌸
+* Third Trimester → 🌺
+* Postpartum → 👶
+
+FIX PRESENTATION ONLY:
+
+* Uniform size (font-size: 26px–30px)
+* Perfect horizontal centering
+* Equal spacing between icon and text
+* Equal spacing inside all cards
+
+---
+
+4. ICON CONTAINERS
+
+* Rounded square background
+* Soft pastel colors
+* Equal padding
+* No harsh borders
+* Centered content
+
+---
+
+5. HOMEPAGE REFINEMENT
+
+* Ensure homepage cards match same style:
+
+  * No visible borders
+  * Use soft shadow instead:
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+
+* Icons must be consistent with category icon system
+
+---
+
+6. LOGO UPDATE
+
+* Replace top logo with a minimal SVG of a pregnant woman
+* Pink themed
+* Clean and simple
+
+---
+
+7. DISCLAIMER TEXT
+
+* Center align text
+* max-width: 500–600px
+* margin: auto
+* line-height: 1.6–1.8
+* Ensure proper wrapping
+
+---
+
+8. DO NOT MODIFY (ALREADY CORRECT)
+
+* Scroll behavior
+* Search section UI
+* Search text
+* Do’s & Don’ts layout
+* Overall structure
+
+---
+
+FINAL CHECK:
+
+* UI must visually match Figma
+* Category icons → SVG consistent
+* Nutrition → Apple SVG everywhere
+* Trimester → Emojis (aligned properly)
+* No layout break
+* No functionality break
+
+If any unrelated section changes, the task is INVALID.
