@@ -15,14 +15,18 @@
   <div id="page-home" class="page active">
     <div class="home-container">
       <div class="home-logo">
-        <div class="logo-icon">
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="24" cy="14" r="10" fill="#e91e8c"/>
-            <path d="M10 44 C10 30 38 30 38 44" fill="#e91e8c"/>
-            <circle cx="24" cy="28" r="4" fill="white"/>
-            <path d="M21 27 L24 30 L27 27" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-          </svg>
-        </div>
+        <!-- Pregnant woman silhouette icon -->
+        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="32" cy="32" r="32" fill="#fce4ec"/>
+          <!-- Head -->
+          <circle cx="32" cy="16" r="7" fill="#e91e8c"/>
+          <!-- Body with baby bump -->
+          <path d="M22 28 C22 28 20 36 20 40 L44 40 C44 36 42 28 42 28 C42 28 40 24 36 23 C34 35 30 35 28 23 C24 24 22 28 22 28Z" fill="#e91e8c"/>
+          <!-- Baby bump circle -->
+          <circle cx="32" cy="37" r="7" fill="#f06292"/>
+          <!-- Heart on bump -->
+          <path d="M29.5 36 C29.5 35 30.5 34 31.5 35 C32 34 33.5 34 33.5 35.5 C33.5 37 32 38 31.5 38.5 C31 38 29.5 37 29.5 36Z" fill="white" opacity="0.8"/>
+        </svg>
       </div>
       <h1 class="home-title">MaternaCare</h1>
       <p class="home-subtitle">Your trusted companion for every stage of pregnancy<br>and beyond</p>
@@ -30,19 +34,32 @@
       <div class="feature-cards">
         <div class="feature-card">
           <div class="feature-icon stage-icon">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="2" y="6" width="12" height="10" rx="2" fill="#e91e8c" opacity="0.8"/><rect x="10" y="12" width="12" height="10" rx="2" fill="#9c27b0" opacity="0.8"/><rect x="6" y="4" width="10" height="8" rx="2" fill="#f06292"/></svg>
+            <!-- Layers / stages icon -->
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e91e8c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+              <polyline points="2 17 12 22 22 17"/>
+              <polyline points="2 12 12 17 22 12"/>
+            </svg>
           </div>
           <span class="feature-label">Stage-Specific<br>Guidance</span>
         </div>
         <div class="feature-card">
           <div class="feature-icon search-icon">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="14" cy="14" r="9" stroke="#0097a7" stroke-width="2.5" fill="none"/><line x1="21" y1="21" x2="28" y2="28" stroke="#0097a7" stroke-width="2.5" stroke-linecap="round"/><circle cx="14" cy="14" r="4" fill="#0097a7" opacity="0.25"/></svg>
+            <!-- Search icon -->
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0097a7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"/>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
           </div>
           <span class="feature-label">Quick Answers</span>
         </div>
         <div class="feature-card">
           <div class="feature-icon info-icon">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="9" r="6" fill="#ffd54f" stroke="#f9a825" stroke-width="1.5"/><rect x="13" y="16" width="6" height="11" rx="2" fill="#ffd54f" stroke="#f9a825" stroke-width="1.5"/></svg>
+            <!-- Shield / trusted icon -->
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <polyline points="9 12 11 14 15 10"/>
+            </svg>
           </div>
           <span class="feature-label">Trusted Information<br>Sources</span>
         </div>
@@ -58,10 +75,17 @@
   <div id="page-guidance" class="page">
     <header class="page-header">
       <div class="header-logo">
-        <svg width="24" height="24" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="14" r="10" fill="#e91e8c"/><path d="M10 44 C10 30 38 30 38 44" fill="#e91e8c"/><circle cx="24" cy="28" r="4" fill="white"/><path d="M21 27 L24 30 L27 27" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+        <svg width="28" height="28" viewBox="0 0 64 64" fill="none">
+          <circle cx="32" cy="14" r="7" fill="#e91e8c"/>
+          <path d="M22 26 C22 26 20 34 20 38 L44 38 C44 34 42 26 42 26 C42 26 40 22 36 21 C34 33 30 33 28 21 C24 22 22 26 22 26Z" fill="#e91e8c"/>
+          <circle cx="32" cy="35" r="7" fill="#f06292"/>
+        </svg>
         <span class="header-brand">MaternaCare</span>
       </div>
-      <button class="btn-back" onclick="showHome()">&#8592; Home</button>
+      <button class="btn-back" onclick="showHome()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Home
+      </button>
     </header>
 
     <div class="page-content">
@@ -71,9 +95,12 @@
       </div>
 
       <div class="guidance-grid">
+        <!-- Emotional Well-being -->
         <div class="guidance-card">
           <div class="guidance-card-icon pink-icon">
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 24s-9-5.5-9-12a9 9 0 0 1 18 0c0 6.5-9 12-9 12z" fill="none" stroke="#e91e8c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e91e8c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
           </div>
           <h3 class="guidance-card-title">Emotional Well-being</h3>
           <p class="guidance-card-sub">Take care of your mental health</p>
@@ -85,9 +112,12 @@
           </ul>
         </div>
 
+        <!-- Rest & Recovery -->
         <div class="guidance-card">
           <div class="guidance-card-icon purple-icon">
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 4 C14 4 14 12 6 16" stroke="#9c27b0" stroke-width="2" stroke-linecap="round"/><path d="M14 4 C14 4 14 12 22 16" stroke="#9c27b0" stroke-width="2" stroke-linecap="round"/><circle cx="14" cy="20" r="4" fill="none" stroke="#9c27b0" stroke-width="2"/></svg>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9c27b0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
           </div>
           <h3 class="guidance-card-title">Rest &amp; Recovery</h3>
           <p class="guidance-card-sub">Your body needs extra rest</p>
@@ -99,9 +129,12 @@
           </ul>
         </div>
 
+        <!-- Nutrition -->
         <div class="guidance-card">
           <div class="guidance-card-icon green-icon">
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="12" r="7" fill="none" stroke="#43a047" stroke-width="2"/><path d="M10 12 L13 15 L18 9" stroke="#43a047" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#43a047" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22V12M12 12C12 12 7 10 7 5a5 5 0 0 1 10 0c0 5-5 7-5 7z"/>
+            </svg>
           </div>
           <h3 class="guidance-card-title">Nutrition</h3>
           <p class="guidance-card-sub">Fuel your body properly</p>
@@ -113,9 +146,12 @@
           </ul>
         </div>
 
+        <!-- Physical Activity -->
         <div class="guidance-card">
           <div class="guidance-card-icon blue-icon">
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M4 16 Q8 8 14 12 Q18 16 24 8" stroke="#1565c0" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1565c0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+            </svg>
           </div>
           <h3 class="guidance-card-title">Physical Activity</h3>
           <p class="guidance-card-sub">Stay active safely</p>
@@ -127,9 +163,15 @@
           </ul>
         </div>
 
+        <!-- Medical Care -->
         <div class="guidance-card">
           <div class="guidance-card-icon indigo-icon">
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="10" r="5" fill="none" stroke="#3949ab" stroke-width="2"/><path d="M7 23 C7 17 21 17 21 23" stroke="#3949ab" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3949ab" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
           </div>
           <h3 class="guidance-card-title">Medical Care</h3>
           <p class="guidance-card-sub">Stay in touch with your provider</p>
@@ -141,9 +183,14 @@
           </ul>
         </div>
 
+        <!-- Safety First -->
         <div class="guidance-card">
           <div class="guidance-card-icon red-icon">
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="10" fill="none" stroke="#e53935" stroke-width="2"/><line x1="14" y1="9" x2="14" y2="15" stroke="#e53935" stroke-width="2" stroke-linecap="round"/><circle cx="14" cy="18" r="1.2" fill="#e53935"/></svg>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e53935" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="12" y1="8" x2="12" y2="12"/>
+              <line x1="12" y1="16" x2="12.01" y2="16"/>
+            </svg>
           </div>
           <h3 class="guidance-card-title">Safety First</h3>
           <p class="guidance-card-sub">Avoid potential risks</p>
@@ -164,22 +211,42 @@
         </div>
         <div class="stage-grid">
           <div class="stage-card" onclick="showStagePage('first')">
-            <div class="stage-emoji">🌱</div>
+            <div class="stage-svg-icon stage-svg-green">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2e7d32" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22V12M12 12C8 12 5 9 5 5a7 7 0 0 1 14 0c0 4-3 7-7 7z"/>
+              </svg>
+            </div>
             <div class="stage-card-title">First Trimester</div>
             <div class="stage-card-sub">1–3 months</div>
           </div>
           <div class="stage-card" onclick="showStagePage('second')">
-            <div class="stage-emoji">🌸</div>
+            <div class="stage-svg-icon stage-svg-pink">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#c2185b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/>
+              </svg>
+            </div>
             <div class="stage-card-title">Second Trimester</div>
             <div class="stage-card-sub">4–6 months</div>
           </div>
           <div class="stage-card" onclick="showStagePage('third')">
-            <div class="stage-emoji">🌺</div>
+            <div class="stage-svg-icon stage-svg-purple">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#6a1b9a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </div>
             <div class="stage-card-title">Third Trimester</div>
             <div class="stage-card-sub">7–9 months</div>
           </div>
           <div class="stage-card" onclick="showStagePage('postpartum')">
-            <div class="stage-emoji">👶</div>
+            <div class="stage-svg-icon stage-svg-orange">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#e65100" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
             <div class="stage-card-title">Postpartum</div>
             <div class="stage-card-sub">After Birth</div>
           </div>
@@ -196,10 +263,17 @@
   <div id="page-stage" class="page">
     <header class="page-header">
       <div class="header-logo">
-        <svg width="24" height="24" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="14" r="10" fill="#e91e8c"/><path d="M10 44 C10 30 38 30 38 44" fill="#e91e8c"/><circle cx="24" cy="28" r="4" fill="white"/><path d="M21 27 L24 30 L27 27" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+        <svg width="28" height="28" viewBox="0 0 64 64" fill="none">
+          <circle cx="32" cy="14" r="7" fill="#e91e8c"/>
+          <path d="M22 26 C22 26 20 34 20 38 L44 38 C44 34 42 26 42 26 C42 26 40 22 36 21 C34 33 30 33 28 21 C24 22 22 26 22 26Z" fill="#e91e8c"/>
+          <circle cx="32" cy="35" r="7" fill="#f06292"/>
+        </svg>
         <span class="header-brand">MaternaCare</span>
       </div>
-      <button class="btn-back" onclick="showGuidancePage()">&#8592; Back</button>
+      <button class="btn-back" onclick="showGuidancePage()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Back
+      </button>
     </header>
 
     <div class="page-content">
@@ -213,27 +287,41 @@
         <p class="category-selector-label">Select a Category to View Guidance</p>
         <div class="category-buttons" id="category-buttons">
           <button class="cat-btn" onclick="selectCategory('emotional')" data-cat="emotional">
-            <svg width="22" height="22" viewBox="0 0 28 28" fill="none"><path d="M14 24s-9-5.5-9-12a9 9 0 0 1 18 0c0 6.5-9 12-9 12z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
             <span>Emotional Well-being</span>
           </button>
           <button class="cat-btn" onclick="selectCategory('rest')" data-cat="rest">
-            <svg width="22" height="22" viewBox="0 0 28 28" fill="none"><path d="M6 18 Q14 4 22 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/><circle cx="14" cy="21" r="3" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
             <span>Rest &amp; Recovery</span>
           </button>
           <button class="cat-btn" onclick="selectCategory('nutrition')" data-cat="nutrition">
-            <svg width="22" height="22" viewBox="0 0 28 28" fill="none"><path d="M14 4 C8 4 6 10 8 14 C10 18 14 22 14 22 C14 22 18 18 20 14 C22 10 20 4 14 4z" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22V12M12 12C8 12 5 9 5 5a7 7 0 0 1 14 0c0 4-3 7-7 7z"/>
+            </svg>
             <span>Nutrition</span>
           </button>
           <button class="cat-btn" onclick="selectCategory('physical')" data-cat="physical">
-            <svg width="22" height="22" viewBox="0 0 28 28" fill="none"><path d="M4 16 Q8 8 14 12 Q18 16 24 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+            </svg>
             <span>Physical Activity</span>
           </button>
           <button class="cat-btn" onclick="selectCategory('medical')" data-cat="medical">
-            <svg width="22" height="22" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="10" r="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M7 23 C7 17 21 17 21 23" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
             <span>Medical Care</span>
           </button>
           <button class="cat-btn" onclick="selectCategory('safety')" data-cat="safety">
-            <svg width="22" height="22" viewBox="0 0 28 28" fill="none"><path d="M14 3 L22 7 L22 15 C22 20 14 25 14 25 C14 25 6 20 6 15 L6 7 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
             <span>Safety</span>
           </button>
         </div>
@@ -241,15 +329,16 @@
 
       <!-- Empty state -->
       <div id="category-empty" class="category-empty-state">
-        <span>👆 Select a category above to view guidance</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block;vertical-align:middle;margin-right:8px"><polyline points="18 15 12 9 6 15"/></svg>
+        <span>Select a category above to view guidance</span>
       </div>
 
       <!-- Do's and Don'ts panels -->
       <div id="dos-donts" class="dos-donts-container" style="display:none;">
         <div class="panel panel-dos">
           <div class="panel-header">
-            <div class="panel-header-icon green-check">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#43a047"/><path d="M7 12 L10 15 L17 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div class="panel-header-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#22c55e"/><path d="M7 12 L10 15 L17 9" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </div>
             <div>
               <h3 class="panel-title">Top 5 Do's</h3>
@@ -260,8 +349,8 @@
         </div>
         <div class="panel panel-donts">
           <div class="panel-header">
-            <div class="panel-header-icon red-x">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#e53935"/><path d="M8 8 L16 16 M16 8 L8 16" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+            <div class="panel-header-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#ef4444"/><path d="M8 8 L16 16 M16 8 L8 16" stroke="white" stroke-width="2.2" stroke-linecap="round"/></svg>
             </div>
             <div>
               <h3 class="panel-title">Top 5 Don'ts</h3>
@@ -276,19 +365,30 @@
       <div class="search-section">
         <div class="search-card">
           <div class="search-card-header">
-            <svg width="24" height="24" viewBox="0 0 28 28" fill="none"><circle cx="12" cy="12" r="8" stroke="#3949ab" stroke-width="2" fill="none"/><line x1="18" y1="18" x2="24" y2="24" stroke="#3949ab" stroke-width="2.5" stroke-linecap="round"/></svg>
+            <div class="search-card-icon-wrap">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3949ab" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"/>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              </svg>
+            </div>
             <h3 class="search-card-title">Have a Specific Question?</h3>
           </div>
-          <p class="search-card-sub">Search our database for quick answers to common pregnancy questions</p>
+          <p class="search-card-sub">Get quick, trusted answers to your pregnancy questions</p>
           <div class="search-input-row">
-            <input type="text" id="search-input" class="search-input" placeholder="Try &quot;Can I drink coffee?&quot; or &quot;What exercises are safe?&quot;" onkeydown="if(event.key==='Enter') doSearch()">
+            <input type="text" id="search-input" class="search-input" placeholder='Try "Can I drink coffee?" or "What exercises are safe?"' onkeydown="if(event.key==='Enter') doSearch()">
             <button class="btn-search" onclick="doSearch()">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="8" stroke="white" stroke-width="2"/><line x1="17" y1="17" x2="22" y2="22" stroke="white" stroke-width="2.5" stroke-linecap="round"/></svg>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"/>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              </svg>
               Search
             </button>
           </div>
           <div class="search-chips-row">
-            <span class="chips-label">Suggested questions:</span>
+            <span class="chips-label">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" style="vertical-align:middle;margin-right:4px"><circle cx="12" cy="12" r="10"/><polyline points="12 8 12 12 14 14"/></svg>
+              Suggested questions:
+            </span>
             <div class="chips">
               <button class="chip" onclick="setSearch('Can I drink coffee?')">Can I drink coffee?</button>
               <button class="chip" onclick="setSearch('What exercises are safe?')">What exercises are safe?</button>
@@ -302,7 +402,11 @@
         </div>
 
         <div class="search-warning">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#f57c00" stroke-width="2"/><line x1="12" y1="8" x2="12" y2="13" stroke="#f57c00" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="16.5" r="1.2" fill="#f57c00"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="min-width:18px;margin-top:1px">
+            <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+            <line x1="12" y1="9" x2="12" y2="13"/>
+            <line x1="12" y1="17" x2="12.01" y2="17"/>
+          </svg>
           <span>This search tool provides general information only. For serious symptoms like severe pain, heavy bleeding, severe headaches, vision changes, or concerning symptoms, contact your healthcare provider immediately or seek emergency care.</span>
         </div>
       </div>

@@ -527,10 +527,7 @@ function selectCategory(cat) {
   document.getElementById('category-empty').style.display = 'none';
   document.getElementById('dos-donts').style.display = 'grid';
 
-  // Scroll to panels smoothly
-  setTimeout(() => {
-    document.getElementById('dos-donts').scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }, 80);
+  // Content updates in place — no scroll position change
 }
 
 // ===== SEARCH =====

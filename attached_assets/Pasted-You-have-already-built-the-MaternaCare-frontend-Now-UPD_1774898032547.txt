@@ -1,0 +1,119 @@
+You have already built the MaternaCare frontend. Now UPDATE and REFINE the existing UI based on the following strict requirements.
+
+CRITICAL RULES:
+
+* Use ONLY HTML, CSS, and Vanilla JavaScript
+* DO NOT use React, Tailwind, Bootstrap, or any framework
+* DO NOT restructure the project unnecessarily
+* Only MODIFY existing code
+
+---
+
+1. ICON FIX (GLOBAL)
+
+* Remove all emojis and inconsistent symbols
+* Replace with clean, minimal SVG icons (Lucide or inline SVG)
+* Maintain consistency across:
+
+  * Category cards
+  * Stage category buttons
+  * Search section
+
+---
+
+2. DISABLE AUTO-SCROLL
+
+* When a category is clicked:
+
+  * DO NOT use scrollIntoView()
+  * DO NOT use anchor jumps (#)
+  * DO NOT use window.scrollTo()
+
+* Content must update WITHOUT changing scroll position
+
+---
+
+3. SEARCH TEXT UPDATE
+
+Replace:
+"Search our database for quick answers..."
+
+With:
+"Get quick, trusted answers to your pregnancy questions"
+
+---
+
+4. SEARCH SECTION UI REDESIGN
+
+Make the "Have a Specific Question" section match the design:
+
+* Use light bluish background card
+
+* Rounded corners (16px–20px)
+
+* Soft shadow + subtle border
+
+* Proper spacing and padding
+
+* Align icon + heading horizontally
+
+* Style input:
+
+  * Rounded (pill shape)
+  * Full width
+
+* Style button:
+
+  * Modern look (blue/purple)
+  * Proper spacing from input
+
+* Suggested questions:
+
+  * Rounded chips
+  * Light background
+  * Clean spacing
+
+---
+
+5. DO’s & DON’Ts ALIGNMENT
+
+* Both cards must:
+
+  * Have equal height
+  * Be perfectly aligned side-by-side
+
+* Use Flexbox or Grid:
+
+  * Ensure stretch alignment
+
+---
+
+6. DISCLAIMER TEXT FIX
+
+* Center align the bottom disclaimer text
+* Limit width (do NOT stretch full screen)
+* Improve line spacing (line-height)
+* Ensure balanced appearance
+
+---
+
+7. LOGO UPDATE
+
+* Replace current logo icon with a pregnant woman style SVG icon
+* Must be:
+
+  * Minimal
+  * Clean
+  * Pink themed
+  * Similar to provided design
+
+---
+
+FINAL CHECK:
+
+* UI must match the screenshots closely
+* No layout breaking
+* No framework usage
+* All changes applied consistently across pages
+
+If any rule is violated, the solution is INVALID.
