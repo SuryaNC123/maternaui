@@ -1,16 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <title>MaternaCare</title>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MaternaCare</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <!-- ===== HOME PAGE ===== -->
+  <div id="page-home" class="page active">
+    <div class="home-container">
+      <div class="home-logo">
+        <div class="logo-icon">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="24" cy="14" r="10" fill="#e91e8c"/>
+            <path d="M10 44 C10 30 38 30 38 44" fill="#e91e8c"/>
+            <circle cx="24" cy="28" r="4" fill="white"/>
+            <path d="M21 27 L24 30 L27 27" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </div>
+      </div>
+      <h1 class="home-title">MaternaCare</h1>
+      <p class="home-subtitle">Your trusted companion for every stage of pregnancy<br>and beyond</p>
+
+      <div class="feature-cards">
+        <div class="feature-card">
+          <div class="feature-icon stage-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="2" y="6" width="12" height="10" rx="2" fill="#e91e8c" opacity="0.8"/><rect x="10" y="12" width="12" height="10" rx="2" fill="#9c27b0" opacity="0.8"/><rect x="6" y="4" width="10" height="8" rx="2" fill="#f06292"/></svg>
+          </div>
+          <span class="feature-label">Stage-Specific<br>Guidance</span>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon search-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="14" cy="14" r="9" stroke="#0097a7" stroke-width="2.5" fill="none"/><line x1="21" y1="21" x2="28" y2="28" stroke="#0097a7" stroke-width="2.5" stroke-linecap="round"/><circle cx="14" cy="14" r="4" fill="#0097a7" opacity="0.25"/></svg>
+          </div>
+          <span class="feature-label">Quick Answers</span>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon info-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="9" r="6" fill="#ffd54f" stroke="#f9a825" stroke-width="1.5"/><rect x="13" y="16" width="6" height="11" rx="2" fill="#ffd54f" stroke="#f9a825" stroke-width="1.5"/></svg>
+          </div>
+          <span class="feature-label">Trusted Information<br>Sources</span>
+        </div>
+      </div>
+
+      <button class="btn-primary" onclick="showGuidancePage()">Get Started</button>
+
+      <p class="disclaimer-text">This information is for educational purposes only and does not replace professional<br>medical advice. Always consult your healthcare provider.</p>
+    </div>
+  </div>
+
+  <!-- ===== GUIDANCE PAGE ===== -->
+  <div id="page-guidance" class="page">
+    <header class="page-header">
+      <div class="header-logo">
+        <svg width="24" height="24" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="14" r="10" fill="#e91e8c"/><path d="M10 44 C10 30 38 30 38 44" fill="#e91e8c"/><circle cx="24" cy="28" r="4" fill="white"/><path d="M21 27 L24 30 L27 27" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+        <span class="header-brand">MaternaCare</span>
+      </div>
+      <button class="btn-back" onclick="showHome()">&#8592; Home</button>
+    </header>
+
+    <div class="page-content">
+      <div class="section-title-block">
+        <h2 class="section-heading">Essential Pregnancy Care Principles</h2>
+        <p class="section-subheading">General guidance that applies throughout your pregnancy journey</p>
+      </div>
+
+      <div class="guidance-grid">
+        <div class="guidance-card">
+          <div class="guidance-card-icon pink-icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 24s-9-5.5-9-12a9 9 0 0 1 18 0c0 6.5-9 12-9 12z" fill="none" stroke="#e91e8c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 class="guidance-card-title">Emotional Well-being</h3>
+          <p class="guidance-card-sub">Take care of your mental health</p>
+          <ul class="guidance-list">
+            <li>Practice relaxation techniques</li>
+            <li>Stay connected with loved ones</li>
+            <li>Don't hesitate to seek support</li>
+            <li>Be kind to yourself</li>
+          </ul>
+        </div>
+
+        <div class="guidance-card">
+          <div class="guidance-card-icon purple-icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 4 C14 4 14 12 6 16" stroke="#9c27b0" stroke-width="2" stroke-linecap="round"/><path d="M14 4 C14 4 14 12 22 16" stroke="#9c27b0" stroke-width="2" stroke-linecap="round"/><circle cx="14" cy="20" r="4" fill="none" stroke="#9c27b0" stroke-width="2"/></svg>
+          </div>
+          <h3 class="guidance-card-title">Rest &amp; Recovery</h3>
+          <p class="guidance-card-sub">Your body needs extra rest</p>
+          <ul class="guidance-list">
+            <li>Aim for 8-9 hours of sleep nightly</li>
+            <li>Take short naps when needed</li>
+            <li>Listen to your body's signals</li>
+            <li>Create a relaxing bedtime routine</li>
+          </ul>
+        </div>
+
+        <div class="guidance-card">
+          <div class="guidance-card-icon green-icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="12" r="7" fill="none" stroke="#43a047" stroke-width="2"/><path d="M10 12 L13 15 L18 9" stroke="#43a047" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 class="guidance-card-title">Nutrition</h3>
+          <p class="guidance-card-sub">Fuel your body properly</p>
+          <ul class="guidance-list">
+            <li>Eat a balanced, varied diet</li>
+            <li>Stay hydrated with water</li>
+            <li>Take prenatal vitamins daily</li>
+            <li>Choose whole, nutritious foods</li>
+          </ul>
+        </div>
+
+        <div class="guidance-card">
+          <div class="guidance-card-icon blue-icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M4 16 Q8 8 14 12 Q18 16 24 8" stroke="#1565c0" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+          </div>
+          <h3 class="guidance-card-title">Physical Activity</h3>
+          <p class="guidance-card-sub">Stay active safely</p>
+          <ul class="guidance-list">
+            <li>Exercise moderately most days</li>
+            <li>Try walking, swimming, or yoga</li>
+            <li>Avoid high-impact activities</li>
+            <li>Stop if you feel pain or dizzy</li>
+          </ul>
+        </div>
+
+        <div class="guidance-card">
+          <div class="guidance-card-icon indigo-icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="10" r="5" fill="none" stroke="#3949ab" stroke-width="2"/><path d="M7 23 C7 17 21 17 21 23" stroke="#3949ab" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+          </div>
+          <h3 class="guidance-card-title">Medical Care</h3>
+          <p class="guidance-card-sub">Stay in touch with your provider</p>
+          <ul class="guidance-list">
+            <li>Attend all prenatal appointments</li>
+            <li>Keep track of your health</li>
+            <li>Ask questions without hesitation</li>
+            <li>Follow medical recommendations</li>
+          </ul>
+        </div>
+
+        <div class="guidance-card">
+          <div class="guidance-card-icon red-icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="10" fill="none" stroke="#e53935" stroke-width="2"/><line x1="14" y1="9" x2="14" y2="15" stroke="#e53935" stroke-width="2" stroke-linecap="round"/><circle cx="14" cy="18" r="1.2" fill="#e53935"/></svg>
+          </div>
+          <h3 class="guidance-card-title">Safety First</h3>
+          <p class="guidance-card-sub">Avoid potential risks</p>
+          <ul class="guidance-list">
+            <li>No alcohol or smoking</li>
+            <li>Avoid risky activities</li>
+            <li>Check medications with doctor</li>
+            <li>Practice good hygiene</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Stage Selection -->
+      <div class="stage-section">
+        <div class="section-title-block">
+          <h2 class="section-heading">Select Your Stage</h2>
+          <p class="section-subheading">Choose your current stage to receive personalized guidance</p>
+        </div>
+        <div class="stage-grid">
+          <div class="stage-card" onclick="showStagePage('first')">
+            <div class="stage-emoji">🌱</div>
+            <div class="stage-card-title">First Trimester</div>
+            <div class="stage-card-sub">1–3 months</div>
+          </div>
+          <div class="stage-card" onclick="showStagePage('second')">
+            <div class="stage-emoji">🌸</div>
+            <div class="stage-card-title">Second Trimester</div>
+            <div class="stage-card-sub">4–6 months</div>
+          </div>
+          <div class="stage-card" onclick="showStagePage('third')">
+            <div class="stage-emoji">🌺</div>
+            <div class="stage-card-title">Third Trimester</div>
+            <div class="stage-card-sub">7–9 months</div>
+          </div>
+          <div class="stage-card" onclick="showStagePage('postpartum')">
+            <div class="stage-emoji">👶</div>
+            <div class="stage-card-title">Postpartum</div>
+            <div class="stage-card-sub">After Birth</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="page-footer">
+      <p>This information is for educational purposes only. Always consult your healthcare provider for medical advice, diagnosis, or treatment. In case of emergency symptoms, seek immediate medical attention.</p>
+    </footer>
+  </div>
+
+  <!-- ===== STAGE PAGE ===== -->
+  <div id="page-stage" class="page">
+    <header class="page-header">
+      <div class="header-logo">
+        <svg width="24" height="24" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="14" r="10" fill="#e91e8c"/><path d="M10 44 C10 30 38 30 38 44" fill="#e91e8c"/><circle cx="24" cy="28" r="4" fill="white"/><path d="M21 27 L24 30 L27 27" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+        <span class="header-brand">MaternaCare</span>
+      </div>
+      <button class="btn-back" onclick="showGuidancePage()">&#8592; Back</button>
+    </header>
+
+    <div class="page-content">
+      <div class="stage-header-block">
+        <span class="stage-badge">Stage-Specific Guidance</span>
+        <h2 id="stage-title" class="stage-main-title"></h2>
+        <p id="stage-desc" class="stage-main-desc"></p>
+      </div>
+
+      <div class="category-selector-card">
+        <p class="category-selector-label">Select a Category to View Guidance</p>
+        <div class="category-buttons" id="category-buttons">
+          <button class="cat-btn" onclick="selectCategory('emotional')" data-cat="emotional">
+            <svg width="22" height="22" viewBox="0 0 28 28" fill="none"><path d="M14 24s-9-5.5-9-12a9 9 0 0 1 18 0c0 6.5-9 12-9 12z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Emotional Well-being</span>
+          </button>
+          <button class="cat-btn" onclick="selectCategory('rest')" data-cat="rest">
+            <svg width="22" height="22" viewBox="0 0 28 28" fill="none"><path d="M6 18 Q14 4 22 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/><circle cx="14" cy="21" r="3" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            <span>Rest &amp; Recovery</span>
+          </button>
+          <button class="cat-btn" onclick="selectCategory('nutrition')" data-cat="nutrition">
+            <svg width="22" height="22" viewBox="0 0 28 28" fill="none"><path d="M14 4 C8 4 6 10 8 14 C10 18 14 22 14 22 C14 22 18 18 20 14 C22 10 20 4 14 4z" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            <span>Nutrition</span>
+          </button>
+          <button class="cat-btn" onclick="selectCategory('physical')" data-cat="physical">
+            <svg width="22" height="22" viewBox="0 0 28 28" fill="none"><path d="M4 16 Q8 8 14 12 Q18 16 24 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+            <span>Physical Activity</span>
+          </button>
+          <button class="cat-btn" onclick="selectCategory('medical')" data-cat="medical">
+            <svg width="22" height="22" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="10" r="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M7 23 C7 17 21 17 21 23" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+            <span>Medical Care</span>
+          </button>
+          <button class="cat-btn" onclick="selectCategory('safety')" data-cat="safety">
+            <svg width="22" height="22" viewBox="0 0 28 28" fill="none"><path d="M14 3 L22 7 L22 15 C22 20 14 25 14 25 C14 25 6 20 6 15 L6 7 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            <span>Safety</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Empty state -->
+      <div id="category-empty" class="category-empty-state">
+        <span>👆 Select a category above to view guidance</span>
+      </div>
+
+      <!-- Do's and Don'ts panels -->
+      <div id="dos-donts" class="dos-donts-container" style="display:none;">
+        <div class="panel panel-dos">
+          <div class="panel-header">
+            <div class="panel-header-icon green-check">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#43a047"/><path d="M7 12 L10 15 L17 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <h3 class="panel-title">Top 5 Do's</h3>
+              <p class="panel-subtitle">Recommended practices</p>
+            </div>
+          </div>
+          <ul id="dos-list" class="dos-list"></ul>
+        </div>
+        <div class="panel panel-donts">
+          <div class="panel-header">
+            <div class="panel-header-icon red-x">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#e53935"/><path d="M8 8 L16 16 M16 8 L8 16" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <div>
+              <h3 class="panel-title">Top 5 Don'ts</h3>
+              <p class="panel-subtitle">Things to avoid</p>
+            </div>
+          </div>
+          <ul id="donts-list" class="donts-list"></ul>
+        </div>
+      </div>
+
+      <!-- Search Section -->
+      <div class="search-section">
+        <div class="search-card">
+          <div class="search-card-header">
+            <svg width="24" height="24" viewBox="0 0 28 28" fill="none"><circle cx="12" cy="12" r="8" stroke="#3949ab" stroke-width="2" fill="none"/><line x1="18" y1="18" x2="24" y2="24" stroke="#3949ab" stroke-width="2.5" stroke-linecap="round"/></svg>
+            <h3 class="search-card-title">Have a Specific Question?</h3>
+          </div>
+          <p class="search-card-sub">Search our database for quick answers to common pregnancy questions</p>
+          <div class="search-input-row">
+            <input type="text" id="search-input" class="search-input" placeholder="Try &quot;Can I drink coffee?&quot; or &quot;What exercises are safe?&quot;" onkeydown="if(event.key==='Enter') doSearch()">
+            <button class="btn-search" onclick="doSearch()">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="8" stroke="white" stroke-width="2"/><line x1="17" y1="17" x2="22" y2="22" stroke="white" stroke-width="2.5" stroke-linecap="round"/></svg>
+              Search
+            </button>
+          </div>
+          <div class="search-chips-row">
+            <span class="chips-label">Suggested questions:</span>
+            <div class="chips">
+              <button class="chip" onclick="setSearch('Can I drink coffee?')">Can I drink coffee?</button>
+              <button class="chip" onclick="setSearch('What exercises are safe?')">What exercises are safe?</button>
+              <button class="chip" onclick="setSearch('Can I eat fish?')">Can I eat fish?</button>
+              <button class="chip" onclick="setSearch('How much water should I drink?')">How much water should I drink?</button>
+              <button class="chip" onclick="setSearch('Is it safe to travel?')">Is it safe to travel?</button>
+              <button class="chip" onclick="setSearch('How to deal with morning sickness?')">How to deal with morning sickness?</button>
+            </div>
+          </div>
+          <div id="search-result" class="search-result" style="display:none;"></div>
+        </div>
+
+        <div class="search-warning">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#f57c00" stroke-width="2"/><line x1="12" y1="8" x2="12" y2="13" stroke="#f57c00" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="16.5" r="1.2" fill="#f57c00"/></svg>
+          <span>This search tool provides general information only. For serious symptoms like severe pain, heavy bleeding, severe headaches, vision changes, or concerning symptoms, contact your healthcare provider immediately or seek emergency care.</span>
+        </div>
+      </div>
+    </div>
+
+    <footer class="page-footer">
+      <p>This information is for educational purposes only. Always consult your healthcare provider for medical advice, diagnosis, or treatment. In case of emergency symptoms, seek immediate medical attention.</p>
+    </footer>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
 </html>
