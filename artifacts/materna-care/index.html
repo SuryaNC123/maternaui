@@ -133,8 +133,7 @@
         <div class="guidance-card">
           <div class="guidance-card-icon green-icon">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#43a047" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 3a2 2 0 0 1 2 2"/>
-              <path d="M10 6c-2.8 1-4 3.8-4 7 0 3.9 2.1 8 5 8 1 0 1.8-.8 3-.8s2 .8 3 .8c2.9 0 5-4.1 5-8 0-3.2-1.2-6-4-7-1 .1-2 .8-3 .8S11 6 10 6z"/>
+              <path d="M12 22V12M12 12C12 12 7 10 7 5a5 5 0 0 1 10 0c0 5-5 7-5 7z"/>
             </svg>
           </div>
           <h3 class="guidance-card-title">Nutrition</h3>
@@ -212,22 +211,42 @@
         </div>
         <div class="stage-grid">
           <div class="stage-card" onclick="showStagePage('first')">
-            <div class="stage-emoji">🌱</div>
+            <div class="stage-svg-icon stage-svg-green">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2e7d32" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22V12M12 12C8 12 5 9 5 5a7 7 0 0 1 14 0c0 4-3 7-7 7z"/>
+              </svg>
+            </div>
             <div class="stage-card-title">First Trimester</div>
             <div class="stage-card-sub">1–3 months</div>
           </div>
           <div class="stage-card" onclick="showStagePage('second')">
-            <div class="stage-emoji">🌸</div>
+            <div class="stage-svg-icon stage-svg-pink">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#c2185b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/>
+              </svg>
+            </div>
             <div class="stage-card-title">Second Trimester</div>
             <div class="stage-card-sub">4–6 months</div>
           </div>
           <div class="stage-card" onclick="showStagePage('third')">
-            <div class="stage-emoji">🌺</div>
+            <div class="stage-svg-icon stage-svg-purple">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#6a1b9a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </div>
             <div class="stage-card-title">Third Trimester</div>
             <div class="stage-card-sub">7–9 months</div>
           </div>
           <div class="stage-card" onclick="showStagePage('postpartum')">
-            <div class="stage-emoji">👶</div>
+            <div class="stage-svg-icon stage-svg-orange">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#e65100" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
             <div class="stage-card-title">Postpartum</div>
             <div class="stage-card-sub">After Birth</div>
           </div>
@@ -281,8 +300,7 @@
           </button>
           <button class="cat-btn" onclick="selectCategory('nutrition')" data-cat="nutrition">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 3a2 2 0 0 1 2 2"/>
-              <path d="M10 6c-2.8 1-4 3.8-4 7 0 3.9 2.1 8 5 8 1 0 1.8-.8 3-.8s2 .8 3 .8c2.9 0 5-4.1 5-8 0-3.2-1.2-6-4-7-1 .1-2 .8-3 .8S11 6 10 6z"/>
+              <path d="M12 22V12M12 12C8 12 5 9 5 5a7 7 0 0 1 14 0c0 4-3 7-7 7z"/>
             </svg>
             <span>Nutrition</span>
           </button>
