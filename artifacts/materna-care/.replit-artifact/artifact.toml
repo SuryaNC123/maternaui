@@ -15,16 +15,11 @@ paths = [ "/" ]
 localPort = 22088
 
 [services.development]
-run = "pnpm --filter @workspace/materna-care run dev"
+run = "python3 -m http.server 22088 --bind 0.0.0.0 --directory /home/runner/workspace/artifacts/materna-care"
 
 [services.production]
-build = [ "pnpm", "--filter", "@workspace/materna-care", "run", "build" ]
-publicDir = "artifacts/materna-care/dist/public"
+publicDir = "artifacts/materna-care"
 serve = "static"
-
-[[services.production.rewrites]]
-from = "/*"
-to = "/index.html"
 
 [services.env]
 PORT = "22088"
